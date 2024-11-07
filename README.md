@@ -100,7 +100,7 @@ To run this website locally:
 2. Open `index.html` in your browser
 
 ### 📤 Deployment
-The website is live at [Portfolio Website](module-2-andikasafri.netlify.app).
+The website is live at [Portfolio Website](https://module-2-andikasafri.netlify.app).
 
 ---
 
