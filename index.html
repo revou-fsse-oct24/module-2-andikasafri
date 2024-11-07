@@ -1,75 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andika Pujangga - Personal Website</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body class="flex flex-col items-center bg-gray-100 text-gray-800">
-
-    <!-- Header -->
-    <header class="bg-gray-800 text-white w-full py-5 sticky top-0 z-10 shadow-md">
-        <div class="text-center max-w-3xl mx-auto px-4">
-            <h1 class="text-3xl font-bold">Welcome to Andika Pujangga's Website</h1>
-            <p class="mt-2 text-lg">Fullstack Software Engineering student at RevoU, exploring the world of programming!</p>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-6 mt-8 space-y-8">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Andika Safri, Cypress, automation testing, full stack engineer, portfolio, web development, QA, software testing">
+        <meta name="description" content="Andika Safri: Cypress expert, automation tester, and aspiring full stack engineer.">
         
-        <!-- About Me Section -->
-        <section id="about-me" class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">About Me</h2>
-            <img src="../Picture/me.jpeg" alt="A personal photo of Andika Pujangga, a Fullstack Software Engineering student" class="w-48 h-auto rounded-full mx-auto border-4 border-gray-800 mb-4">
-            <p class="text-justify leading-relaxed mb-4">
-                Hello! My name is Andika Pujangga. I am currently studying Fullstack Software Engineering at RevoU,
-                with a keen interest in Machine Learning and AI. I began my journey as an automation software tester using Cypress,
-                and am now diving deeper into Fullstack development, focusing on JavaScript and Python.
-            </p>
-            <p class="text-justify leading-relaxed">
-                My passion lies in building impactful, AI-driven solutions, and I am excited to use fullstack skills to achieve that.
-            </p>
-        </section>
+        <title>Andika Safri - Automation Tester & Full Stack Engineer</title>
 
-        <!-- Learning Journey Section -->
-        <section id="learning-journey" class="mb-8">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Current Learning Journey</h2>
-            <p class="mb-2">I am currently studying the following technologies:</p>
-            <ul class="list-disc list-inside mb-4 pl-4">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-            </ul>
-            <p>These are foundational for building responsive, engaging websites and applications.</p>
-        </section>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <!-- Fonts -->
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+        
+        <!-- Animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    </head>
 
-        <!-- Contact Form Section -->
-        <section id="contact">
-            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Contact Me</h2>
-            <form action="#" method="POST" class="bg-gray-100 p-6 rounded-lg shadow-inner" aria-label="Contact form">
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Your Name:</label>
-                    <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-gray-400">
+    <body data-spy="scroll" data-target="#rock-navigation">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
+            <div class="container">
+                <!-- Navbar Header -->
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Andika Safri</a>
                 </div>
-                <div class="mb-4">
-                    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Your Message:</label>
-                    <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-400"></textarea>
-                </div>
-                <div class="mb-4 flex items-center">
-                    <input type="checkbox" id="updates" name="updates" class="mr-2">
-                    <label for="updates" class="text-sm text-gray-700">Subscribe to updates</label>
-                </div>
-                <button type="submit" class="w-full bg-gray-800 text-white font-medium py-2 rounded-md hover:bg-gray-700 active:bg-gray-600 transition" aria-label="Submit Contact Form">Submit</button>
-            </form>
-        </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center py-4 w-full mt-8">
-        <p>Thank you for visiting! Connect with me on <a href="https://www.instagram.com/dikko_pujangga" class="underline">Instagram</a>, <a href="https://www.facebook.com/muhamadandikapujangga" class="underline">Facebook</a>, and <a href="https://www.linkedin.com/in/andika-safri" class="underline">LinkedIn</a>.</p>
-        <p>Check out my <a href="https://github.com/andikasafri" class="underline">GitHub profile</a> for more projects!</p>
-    </footer>
+                <!-- Navigation Links -->
+                <nav class="collapse navbar-collapse" id="rock-navigation">
+                    <ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
+                        <li><a href="#home" class="smoothScroll">Home</a></li>
+                        <li><a href="#work" class="smoothScroll">My Work</a></li>
+                        <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+                        <li><a href="#resume" class="smoothScroll">Resume</a></li>
+                        <li><a href="#skills" class="smoothScroll">Skills</a></li>
+                        <li><a href="#about" class="smoothScroll">About</a></li>
+                        <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="templatemo-home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <h1 class="tm-home-title">
+                            <strong id="typed-strings">Andika Safri</strong>
+                        </h1>
+                        <h2 class="tm-home-subtitle">Full Stack Software Engineer Student</h2>
+                        <p>
+                            I am a professional <strong>Automation Tester</strong> and 
+                            <strong>Front-End Developer</strong> creating modern and responsive 
+                            designs for <strong>Web</strong> and <strong>Mobile</strong>. 
+                            Let us work together. Thank you.
+                        </p>
+                        <a href="#work" class="btn btn-default smoothScroll tm-view-more-btn">
+                            Let's Begin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<!-- END HOME -->
+
+	<!-- START work -->
+	<section id="work" class="tm-padding-top-bottom-100" data-aos="fade-up">
+		<div class="work-grid-container">
+			<div class="work-title">
+				<h2 class="title">My <strong>Work Experience</strong></h2>						
+			</div>
+			<div class="work-wrapper technical-skills">
+				<i class="fa fa-code"></i>
+				<h3 class="text-uppercase tm-work-h3">Technical Skills</h3>
+				<hr>
+				<p><strong>Programming Languages:</strong></p>
+				<ul class="skill-list">
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JavaScript</li>
+					<li>Python</li>
+				</ul>
+				<p><strong>Testing Frameworks:</strong></p>
+				<ul class="framework-list">
+					<li>Cypress (JavaScript-based testing framework)</li>
+				</ul>
+				<p><strong>Development Tools:</strong></p>
+				<ul class="tool-list">
+					<li>GitHub & GitLab</li>
+					<li>Docker</li>
+					<li>Amazon EC2 (Server Management)</li>
+				</ul>
+			</div>
+			<div class="work-wrapper automation-tester">
+				<i class="fa fa-cogs"></i>
+				<h3 class="text-uppercase tm-work-h3">End-to-End Automation Tester</h3>
+				<hr>
+				<p><strong>Company:</strong> Apicore GmbH</p>
+				<p><strong>Project:</strong> Flexopus</p>
+				<p><strong>Duration:</strong> June 2022 - August 2024</p>
+				<p><strong>Key Achievements:</strong></p>
+				<ul class="achievement-list">
+					<li>Enhanced CI/CD with Cypress-based end-to-end tests</li>
+					<li>Reduced testing cycle time by 15%</li>
+					<li>Improved load times by 10%</li>
+					<li>Collaborated with developers to boost product quality</li>
+				</ul>
+			</div>
+			<div class="work-wrapper personal-projects">
+				<i class="fa fa-laptop"></i>
+				<h3 class="text-uppercase tm-work-h3">Personal Projects</h3>
+				<hr>
+				<ul class="project-list">
+					<li>
+						<strong>Personal Website</strong><br>
+						Developed a responsive HTML site with Tailwind CSS styling.<br>
+						<a href="https://module-1-andikasafri.netlify.app" target="_blank" class="tm-project-link">
+							View Project <i class="fa fa-external-link"></i>
+						</a>
+					</li>
+					<li>
+						<strong>E2E Testing Implementation</strong><br>
+						Implemented Cypress end-to-end tests in CI/CD, reducing testing time by 15%.
+					</li>
+					<li>
+						<strong>Stripe Payment Integration</strong><br>
+						Created a website with integrated Stripe payment processing system.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- END work -->
+
+	<!-- START PORTFOLIO -->
+	<section id="portfolio" class="tm-portfolio" data-aos="fade-up">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wow bounce">
+					<div class="title">
+						<h2 class="tm-portfolio-title">My <strong>Portfolio</strong></h2>
+					</div>
+	
+					<!-- START ISO SECTION -->
+					<div class="iso-section">
+						<ul class="filter-wrapper clearfix">
+							<li><a href="#" class="opc-main-bg selected" data-filter="*">All</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".automation">Automation</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".web">Web Development</a></li>
+							<li><a href="#" class="opc-main-bg" data-filter=".integration">Integration</a></li>
+						</ul>
+						<div class="iso-box-section">
+							<div class="iso-box-wrapper col4-iso-box">
+								<div class="iso-box automation col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img1.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Cypress Automation Testing</h3>
+											<p>Implemented end-to-end testing using Cypress for a major project. Improved test coverage and reduced testing time significantly.</p>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box web col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img2.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Personal Website</h3>
+											<p>A responsive, static HTML website to showcase personal information, my learning journey, and a contact form. Built with Tailwind CSS, it features streamlined styling and fully responsive design.</p>
+											<a href="https://module-1-andikasafri.netlify.app" target="_blank" class="tm-project-link">View Project</a>
+										</div>
+									</div>
+								</div>
+								<div class="iso-box integration col-md-4 col-sm-6 col-xs-12">
+									<div class="portfolio-thumb">
+										<img src="images/portfolio-img3.jpg" class="fluid-img" alt="portfolio img">
+										<div class="portfolio-overlay">
+											<h3 class="portfolio-item-title">Stripe Payment Integration</h3>
+											<p>Developed a website with integrated Stripe payment processing, demonstrating skills in both front-end development and third-party API integration.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END PORTFOLIO -->
+
+	<!-- START RESUME -->
+	<section id="resume" class="tm-padding-top-bottom-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">					
+					<h2 class="title">My <strong>Profile</strong></h2>
+					<p><span class="tm-info-label">Name</span> M. Andika P. P. Safri</p>
+					<p><span class="tm-info-label">Birthday</span> October 02, 2000</p>
+					<p><span class="tm-info-label">Address</span> Kota Tangerang Selatan, Banten, Indonesia</p>
+					<p><span class="tm-info-label">Phone</span> +62 82 2350 03683</p>
+					<p><span class="tm-info-label">Email</span> andika.saf3@gmail.com</p>
+					<p><span class="tm-info-label">Website</span> <a href="https://module-1-andikasafri.netlify.app" class="tm-red-text">module-1-andikasafri.netlify.app</a></p>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<h2 class="title"><strong>Professional</strong> Skills</h2>
+					<p>Specialized in Cypress automation framework for comprehensive end-to-end testing, ensuring seamless user experience validation across web applications.</p>
+					
+					<h4 class="tm-progress-label">JavaScript <small class="progress-percent-small">80%</small></h4>
+					<div class="progress tm-progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000"></div>
+					</div>
+					<h4 class="tm-progress-label">Python <small class="progress-percent-small">80%</small></h4>
+					<div class="progress tm-progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000"></div>
+					</div>
+					<h4 class="tm-progress-label">GitLab <small class="progress-percent-small">60%</small></h4>
+					<div class="progress tm-progress">
+						<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END RESUME -->
+	 <!-- START SKILLS & TECHNOLOGIES -->
+<section id="skills" class="tm-skills">
+    <div class="container-fluid">
+        <div class="skills-grid">
+            <!-- Main Title -->
+            <div class="skills-title" data-aos="fade-right">
+                <h2 class="title">Skills & <strong>Technologies</strong></h2>
+                <p class="skills-subtitle">My technical toolkit and expertise</p>
+            </div>
+
+            <!-- Frontend Card -->
+            <div class="skill-card frontend" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card-content">
+                    <i class="fa fa-code"></i>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-tag">HTML5</span></li>
+                        <li><span class="skill-tag">CSS3</span></li>
+                        <li><span class="skill-tag">JavaScript</span></li>
+                        <li><span class="skill-tag">React</span></li>
+                        <li><span class="skill-tag">Tailwind</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Testing Card -->
+            <div class="skill-card testing" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card-content">
+                    <i class="fa fa-bug"></i>
+                    <h3>Testing</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-tag">Cypress</span></li>
+                        <li><span class="skill-tag">Jest</span></li>
+                        <li><span class="skill-tag">Selenium</span></li>
+                        <li><span class="skill-tag">TestNG</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tools Card -->
+            <div class="skill-card tools" data-aos="zoom-in" data-aos-delay="600">
+                <div class="card-content">
+                    <i class="fa fa-wrench"></i>
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li><span class="skill-tag">Git</span></li>
+                        <li><span class="skill-tag">Docker</span></li>
+                        <li><span class="skill-tag">AWS</span></li>
+                        <li><span class="skill-tag">Jenkins</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Featured Skill -->
+            <div class="featured-skill" data-aos="fade-left">
+                <div class="featured-content">
+                    <h3>Specialized in</h3>
+                    <h2 class="highlight">Cypress</h2>
+                    <p>End-to-End Testing Expert</p>
+                    <div class="experience-bar">
+                        <div class="experience-fill"></div>
+                        <span>2+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+	<!-- START ABOUT -->
+	<section id="about" class="tm-about">
+		<picture class="background-image">
+			<source media="(max-width: 767px)" srcset="../images/about-bg-small.jpg">
+			<source media="(max-width: 1199px)" srcset="../images/about-bg-medium.jpg">
+			<source media="(min-width: 1200px)" srcset="../images/about-bg-large.jpg">
+			<img src="../images/about-bg-fallback.jpg" alt="About background">
+		</picture>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-7">
+					<div class="title">
+						<h2 class="about-heading">This is <strong>me</strong></h2>
+						<h1 class="tm-red-text">Code <strong>Whisperer</strong></h1>
+					</div>
+					<p class="description-about">Hey there! I'm Andika Safri, a tech enthusiast with a passion for AI-driven solutions. My journey began in 2022 as a manual tester, but I quickly leveled up to automation testing with Cypress. It's like having an AI sidekick that tirelessly hunts down bugs!</p>
+					<p class="description-about">Now, I'm diving headfirst into the world of Full Stack Software Engineering at RevoU. My ultimate goal? To become an AI developer and shape the future of technology. Join me on this exciting adventure where code meets creativity, and let's build something amazing together!</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- END ABOUT -->
+
+	<!-- START SOCIAL -->
+<section id="social" class="tm-social">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.3s">
+                <div class="media linkedin">
+                    <a href="https://www.linkedin.com/in/andika-safri" target="_blank">
+                        <div class="media-object pull-left">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading tm-social-title">Connect with me on</h4>
+                            <h3>LinkedIn</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.6s">
+                <div class="media github">
+                    <a href="https://github.com/andikasafri" target="_blank">
+                        <div class="media-object pull-left">
+                            <i class="fa fa-github"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading tm-social-title">Check my code on</h4>
+                            <h3>GitHub</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.9s">
+                <div class="media daily-dev">
+                    <a href="https://app.daily.dev/andikasafri" target="_blank">
+                        <div class="media-object pull-left">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading tm-social-title">Follow my dev journey on</h4>
+                            <h3>Daily.dev</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END SOCIAL -->
+
+	<!-- START CONTACT -->
+<section id="contact" class="tm-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">					
+                <h2 class="title">Drop <strong>me a line</strong></h2>
+                <hr>					
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-md-10 col-sm-10">
+                <!-- You might want to add a form handling service like FormSpree -->
+                <form action="https://formspree.io/f/your-formspree-id" method="POST">
+                    <div class="col-md-6 col-sm-6">
+                        <input class="form-control" type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <input class="form-control" type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                        <input class="form-control" type="text" name="subject" placeholder="Your Subject" required>
+                        <textarea class="form-control" name="message" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+                        <input class="form-control" type="submit" value="SEND MESSAGE">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-1 col-sm-1"></div>
+            <div class="col-md-12 col-sm-12">
+                <!-- Update the copyright information -->
+                <p>Copyright &copy; 2024 Andika Safri </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END CONTACT -->
+   <!-- Scripts -->
+   <script src="js/jquery.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/smoothscroll.js"></script>
+   <script src="js/jquery.nav.js"></script>
+   <script src="js/isotope.js"></script>
+   <script src="js/imagesloaded.min.js"></script>
+   <script src="js/custom.js"></script>
 </body>
 </html>
