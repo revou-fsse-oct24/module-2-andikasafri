@@ -1,6 +1,6 @@
 body {
   background: #ffffff;
-  font-family: 'CodeWhisperer';
+  font-family: 'CodeWhisperer'; /* Add @font-face di element body */
   font-size: 18px;
   color: #606060;
   position: relative;
@@ -97,6 +97,7 @@ hr {
   text-transform: uppercase;
  }
 
+ /* Text Shadow Applied */
  .tm-home-title { 
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
   font-size: 60px; 
@@ -125,11 +126,6 @@ hr {
   color: #eb5424;
 }
 
-.templatemo-home {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-}
 /* END HOME */
 
 /* START WORK */
@@ -645,30 +641,14 @@ hr {
 }
 
 /* START ABOUT */
+/* Responsive Background Applied */
 .tm-about {
+  position: relative;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
   padding-top: 60px;
   padding-bottom: 100px;
-}
-
-@media (max-width: 767px) {
-  .tm-about {
-    background-image: url('../images/about-bg-small.jpg');
-  }
-}
-
-@media (max-width: 1199px) and (min-width: 768px) {
-  .tm-about {
-    background-image: url('../images/about-bg-medium.jpg');
-  }
-}
-
-@media (min-width: 1200px) {
-  .tm-about {
-    background-image: url('../images/about-bg-large.jpg');
-  }
 }
 
 .tm-about .background-image {
@@ -844,4 +824,28 @@ input { height: 50px; }
   0% { transform: scale(1); }
   50% { transform: scale(1.05); }
   100% { transform: scale(1); }
+}
+
+@media (max-width: 767px) {
+  .tm-about {
+    background-image: url('../images/about-bg-small.jpg');
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .tm-about {
+    background-image: url('../images/about-bg-medium.jpg');
+  }
+}
+
+@media (min-width: 1200px) {
+  .tm-about {
+    background-image: url('../images/about-bg-large.jpg');
+  }
+}
+
+.templatemo-home {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
 }
