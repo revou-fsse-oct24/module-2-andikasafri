@@ -1,107 +1,74 @@
-# Andika Safri - Automation Tester & Full Stack Engineer Portfolio
+# Deployment Guide: Netlify & GitHub
 
-![Profile Photo](./images/me_1.jpg)
-
-A responsive, dynamic portfolio website showcasing my professional experience, skills, and projects. Built with HTML, CSS, and JavaScript, featuring smooth scrolling and animated sections.
+This guide explains how to deploy a GitHub project on Netlify, set up auto-deployment, and connect a custom domain.
 
 ---
 
-### 👨‍💻 About Me
-I'm Andika Safri, a professional **Automation Tester** and **Front-End Developer** specializing in creating modern and responsive designs for Web and Mobile. Currently pursuing Full Stack Software Engineering to expand my skill set.
+### 1. Netlify Setup & GitHub Connection
+
+1. **Sign Up/Login**  
+   Go to [Netlify](https://www.netlify.com), sign up or log in.
+
+   ![Netlify Sign-Up](./images/step-1.png)
+
+2. **Add New Site**  
+   Go to the **Sites** page, click **"Add new site"** > **"Import an existing project"**.
+
+   ![Add New Site](./images/step-2.png)
+
+3. **Connect to GitHub**  
+   Choose **GitHub** as the source, authorize Netlify to access your repos, and select your repository (e.g., `module-2-andikasafri`).
+
+   ![Connect to GitHub](./images/step-3.png)
+
+4. **Configure & Deploy**  
+   Adjust build settings if needed (Netlify auto-detects many settings) and click **Deploy**.
+
+   ![Deployment Settings](./images/step-4.png)
+
+5. **Verify Deployment**  
+   Visit the Netlify-generated URL (e.g., `your-site-name.netlify.app`) to confirm your site is live.
 
 ---
 
-### 🚀 Website Sections
-1. **Home** - Introduction and professional summary
-2. **Work Experience** - Detailed work history and technical skills
-3. **Portfolio** - Showcase of key projects
-4. **Resume** - Professional profile and skills overview
-5. **Skills & Technologies** - Comprehensive list of technical competencies
-6. **About** - Personal background and career aspirations
-7. **Social** - Professional networking links
-8. **Contact** - Form to get in touch
+### 2. Auto-Deployment from GitHub
+
+1. **Automatic Deployment**  
+   Netlify enables auto-deployment from GitHub by default. Any main branch changes will automatically redeploy your site.
+
+   ![Deploy overview page](./images/step-5.png)
+
+2. **Test Auto-Deployment**  
+   Make a change in GitHub (e.g., edit README), commit to main, and check Netlify deploy logs to confirm updates.
+
+   ![Deploy log](./images/step-6.png)
 
 ---
 
-### 💼 Featured Work Experience
-- **End-to-End Automation Tester** at Apicore GmbH (June 2022 - August 2024)
-  - Enhanced CI/CD with Cypress-based end-to-end tests
-  - Reduced testing cycle time by 15%
-  - Improved load times by 10%
+### 3. Custom Domain & DNS Setup
+
+1. **Buy a Domain**  
+   Purchase a custom domain from a provider like NiagaHoster.
+
+2. **Add Domain in Netlify**  
+   In **Domain Settings**, click **Add custom domain** and enter your purchased domain name.
+
+   ![Add custom domain screen](./images/step-7.png)
+
+3. **Update Nameservers**  
+   In your domain provider’s settings, replace the default nameservers with Netlify’s (found in **Domain Management** on Netlify).
+
+   ![Netlify nameserver settings](./images/step-8.png)
+
+4. **Enable SSL/TLS**  
+   In Netlify’s domain settings, activate SSL/TLS for HTTPS.
+
+   ![SSL/TLS activation](./images/step-9.png)
 
 ---
 
-### 🛠 Skills & Technologies
-- **Frontend**: HTML5, CSS3, JavaScript, React, Tailwind
-- **Testing**: Cypress, Jest, Selenium, TestNG
-- **Tools**: Git, Docker, AWS, Jenkins
-- **Specialized in**: Cypress (End-to-End Testing)
+### Summary
+
+Now your project is live on Netlify, set to auto-update with GitHub, and accessible via your custom domain with SSL security.
 
 ---
-
-### 🌐 Projects
-1. **Personal Website** - Responsive HTML site with Tailwind CSS
-2. **E2E Testing Implementation** - Cypress tests in CI/CD
-3. **Stripe Payment Integration** - Website with integrated payment processing
-
----
-
-### 🖋 Assignment Implementation Summary
-This section covers all assignment tasks, demonstrating the implementation of various required features:
-
-- **Font Implementation**: Custom `@font-face` font applied to the `body` element for consistent usability across the site.
-- **Text Styling**: `text-shadow` applied to `.title` and `.work-wrapper h3` for subtle, polished effects.
-- **Custom List Styles**: Unique list styles created using emojis with the `::before` pseudo-element on various `ul` lists.
-- **Responsive Background Image**:
-  - Uses the `<picture>` element with multiple `<source>` tags and `srcset` attributes to serve optimized images based on screen width.
-  - Includes fallback `<img>` for compatibility with older browsers.
-  - `object-fit: cover` ensures aspect ratio maintenance.
-  - Example:
-    ```html
-    <picture class="background-image">
-      <source media="(max-width: 767px)" srcset="../images/about-bg-small.jpg">
-      <source media="(max-width: 1199px)" srcset="../images/about-bg-medium.jpg">
-      <source media="(min-width: 1200px)" srcset="../images/about-bg-large.jpg">
-      <img src="../images/about-bg-fallback.jpg" alt="About background">
-    </picture>
-    ```
-- **Asymmetrical Grid Layout**: Uses CSS Grid for an asymmetrical layout in the work experience section, with media queries for responsiveness.
-- **CSS Transitions**:
-  - Example: `.tm-view-more-btn` with `transition: all 0.6s ease-in;`
-- **CSS Animations**:
-  - Example: `@keyframes slideInFromLeft` to create a slide-in effect:
-    ```css
-    @keyframes slideInFromLeft {
-        0% {
-            transform: translateX(-100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
-    ```
-
----
-
-### 📞 Contact
-To get in touch:
-- Fill out the contact form on the website
-- Connect on [LinkedIn](https://www.linkedin.com/in/andika-safri)
-- Check out my code on [GitHub](https://github.com/andikasafri)
-- Follow my dev journey on [Daily.dev](https://app.daily.dev/andikasafri)
-
----
-
-### 🚀 How to Use
-To run this website locally:
-1. Clone the repository
-2. Open `index.html` in your browser
-
-### 📤 Deployment
-The website is live at [Portfolio Website](https://module-2-andikasafri.netlify.app).
-
----
-
-Feel free to explore my portfolio and reach out for collaborations or opportunities!
