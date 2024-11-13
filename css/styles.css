@@ -90,7 +90,7 @@ hr {
 /* START HOME */
 /* START HOME */
 .templatemo-home {
-  background: url("../images/home-bg.jpg");
+  background: url("../images/home-bg.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
@@ -963,13 +963,13 @@ input {
 
 @media (min-width: 767px) {
   .tm-about {
-    background-image: url("../images/about-bg-small.jpg");
+    background-image: url("../images/about-bg-small.webp");
   }
 }
 
 @media (min-width: 1200px) {
   .tm-about {
-    background-image: url("../images/about-bg-large.jpg");
+    background-image: url("../images/about-bg-large.webp");
   }
 }
 
