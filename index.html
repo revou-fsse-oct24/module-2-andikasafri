@@ -201,111 +201,87 @@
     </section>
     <!-- END work -->
 
-    <!-- START PORTFOLIO -->
-    <section id="portfolio" class="tm-portfolio" data-aos="fade-up">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 wow bounce">
-            <div class="title">
-              <h2 class="tm-portfolio-title">My <strong>Portfolio</strong></h2>
-            </div>
+    <!-- START PORTFOLIO CAROUSEL -->
+    <section id="portfolio" class="tm-portfolio">
+      <div class="carousel-container">
+        <!-- Radio Buttons for Navigation -->
+        <input type="radio" name="carousel" id="slide1" checked />
+        <input type="radio" name="carousel" id="slide2" />
+        <input type="radio" name="carousel" id="slide3" />
 
-            <!-- START ISO SECTION -->
-            <div class="iso-section">
-              <ul class="filter-wrapper clearfix">
-                <li>
-                  <a href="#" class="opc-main-bg selected" data-filter="*"
-                    >All</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="opc-main-bg" data-filter=".automation"
-                    >Automation</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="opc-main-bg" data-filter=".web"
-                    >Web Development</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="opc-main-bg" data-filter=".integration"
-                    >Integration</a
-                  >
-                </li>
-              </ul>
-              <div class="iso-box-section">
-                <div class="iso-box-wrapper col4-iso-box">
-                  <div class="iso-box automation col-md-4 col-sm-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                      <img
-                        src="images/portfolio-img1.webp"
-                        class="fluid-img"
-                        alt="portfolio img"
-                      />
-                      <div class="portfolio-overlay">
-                        <h3 class="portfolio-item-title">
-                          Cypress Automation Testing
-                        </h3>
-                        <p>
-                          Implemented end-to-end testing using Cypress for a
-                          major project. Improved test coverage and reduced
-                          testing time significantly.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="iso-box web col-md-4 col-sm-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                      <img
-                        src="images/portfolio-img2.webp"
-                        class="fluid-img"
-                        alt="portfolio img"
-                      />
-                      <div class="portfolio-overlay">
-                        <h3 class="portfolio-item-title">Personal Website</h3>
-                        <p>
-                          A responsive, static HTML website to showcase personal
-                          information, my learning journey, and a contact form.
-                          Built with Tailwind CSS, it features streamlined
-                          styling and fully responsive design.
-                        </p>
-                        <a
-                          href="https://module-1-andikasafri.netlify.app"
-                          target="_blank"
-                          class="tm-project-link"
-                          >View Project</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                  <div class="iso-box integration col-md-4 col-sm-6 col-xs-12">
-                    <div class="portfolio-thumb">
-                      <img
-                        src="images/portfolio-img3.webp"
-                        class="fluid-img"
-                        alt="portfolio img"
-                      />
-                      <div class="portfolio-overlay">
-                        <h3 class="portfolio-item-title">
-                          Stripe Payment Integration
-                        </h3>
-                        <p>
-                          Developed a website with integrated Stripe payment
-                          processing, demonstrating skills in both front-end
-                          development and third-party API integration.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div class="carousel-wrapper">
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item">
+            <div class="portfolio-thumb">
+              <img
+                src="images/portfolio-img1.webp"
+                class="fluid-img"
+                alt="Cypress Automation Testing"
+              />
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-item-title">Cypress Automation Testing</h3>
+                <p>
+                  Implemented end-to-end testing using Cypress for a major
+                  project. Improved test coverage and reduced testing time
+                  significantly.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <div class="portfolio-thumb">
+              <img
+                src="images/portfolio-img2.webp"
+                class="fluid-img"
+                alt="Personal Website"
+              />
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-item-title">Personal Website</h3>
+                <p>
+                  A responsive, static HTML website to showcase personal
+                  information and projects. Built with Tailwind CSS for modern
+                  styling.
+                </p>
+                <a
+                  href="https://module-1-andikasafri.netlify.app"
+                  target="_blank"
+                  class="tm-project-link"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Item 3 -->
+          <div class="carousel-item">
+            <div class="portfolio-thumb">
+              <img
+                src="images/portfolio-img3.webp"
+                class="fluid-img"
+                alt="Stripe Payment Integration"
+              />
+              <div class="portfolio-overlay">
+                <h3 class="portfolio-item-title">Stripe Payment Integration</h3>
+                <p>
+                  Developed a website with integrated Stripe payment processing,
+                  demonstrating front-end and API integration skills.
+                </p>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Navigation Numbers -->
+        <div class="carousel-nav">
+          <label for="slide1" class="number active">1</label>
+          <label for="slide2" class="number">2</label>
+          <label for="slide3" class="number">3</label>
+        </div>
       </div>
     </section>
-    <!-- END PORTFOLIO -->
+    <!-- END PORTFOLIO CAROUSEL -->
 
     <!-- START RESUME -->
     <section id="resume" class="tm-padding-top-bottom-100">
@@ -423,7 +399,6 @@
       </div>
     </section>
     <!-- END RESUME -->
-    ⬤
 
     <!-- START SKILLS & TECHNOLOGIES -->
     <section id="skills" class="tm-skills">
